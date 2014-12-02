@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="url_link_color">#d32046</color>
+    <color name="skip_button_color">#CBC9BC</color>
+    <color name="background_color">#F9F8F4</color>
+
+    <color name="menuitem_brown">#393939</color>
+    <color name="green_dark">#11901e</color>
+    <color name="green_light">#1fb02e</color>
+    
+</resources>

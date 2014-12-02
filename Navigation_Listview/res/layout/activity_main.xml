@@ -1,0 +1,73 @@
+<com.example.navigation_listview.utills.SlidingMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="288dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000" >
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- This acts as Actionbar -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_50"
+            android:background="#0174DF"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/button_menu"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/slide_menu_icon"
+                android:onClick="toggleMenu" />
+
+            <TextView
+                android:id="@+id/lk_profile_header_textview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding_50"
+                 android:layout_centerInParent="true"
+                android:gravity="center"
+                android:padding="@dimen/padding_10"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_20"
+                android:textStyle="bold"
+                android:text="Navigation Drawer"
+                 />
+        </RelativeLayout>
+
+        <!-- This is where fragment will show up -->
+
+        <FrameLayout
+            android:id="@+id/lk_profile_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" >
+        </FrameLayout>
+    </LinearLayout>
+
+</com.example.navigation_listview.utills.SlidingMenuLayout>
